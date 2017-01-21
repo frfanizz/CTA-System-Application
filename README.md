@@ -1,9 +1,10 @@
 # CTA-System-Application
 
-A course project for accelerated introduction to programming course at IIT. An application which imports CTA Station and CTA Line information and displays information based on user prompts.
+A course project for accelerated introduction to programming course at IIT. An application which imports CTA Station and CTA Line information (saved in CTAStops.csv) and displays information based on user prompts.
 
+Included are source code files, as well as documentation files.
 
-Class descriptions:
+# Class descriptions:
 
 CTAStopApp: CTAStopApp is the main application class which prompts the user for choices and based on the user input, uses functions to accomplish tasks to display data. This class uses all other classes to accomplish this, but most data manipulation is done through the CTASystem class methods.
 
@@ -14,3 +15,5 @@ CTARoute: CTARoute is an object class which contains information relevant to a C
 CTAStation: CTAStation is an object class that stores information about a CTA Station. It inherits from GeoLocation to store the Station's location, and also has variables for the station name, vertical location (elevated, ground, etc.), wheelchair accessibility, and it's position on each CTA Line. This Object class contains many methods that are used by CTARoute, CTASystem, or directly.
 
 GeoLocation: GeoLocation is an object class that stores a location as a latitude and longitude. This object class's unique method is the calcDistanceMiles method, which calculates the distance to another geoLocation (or latitude and longitude pair) in miles.
+
+Also included are several unit test case classes, which test methods of GeoLocation, CTAStation, and CTARoute.
